@@ -1,0 +1,21 @@
+{
+	"node": "n8n-nodes-memida",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"Miscellaneous",
+		"Productivity"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://manual.memida.de/docs/api/memida-api/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://manual.memida.de/"
+			}
+		]
+	}
+}

@@ -1,0 +1,50 @@
+{
+  "name": "n8n-nodes-memida",
+  "version": "0.1.0",
+  "description": "n8n community node for interacting with the memida API",
+  "keywords": [
+    "n8n",
+    "n8n-community-node-package",
+    "memida"
+  ],
+  "author": {
+    "name": "Jan Wittkamp",
+    "email": "jan.wittkamp@memida.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Memida/n8n-nodes-memida.git"
+  },
+  "license": "MIT",
+  "main": "dist/nodes/Memida/Memida.node.js",
+  "types": "dist/nodes/Memida/Memida.node.d.ts",
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/MemidaApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Memida/Memida.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^19.0.4",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
